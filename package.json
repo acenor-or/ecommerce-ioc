@@ -1,0 +1,29 @@
+{
+  "name": "ecommerce-ioc-inversify",
+  "version": "1.0.0",
+  "description": "E-commerce SOLID com container de IoC (InversifyJS)",
+  "main": "src/server.ts",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init",
+    "prisma:seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "inversify": "^7.0.0",
+    "nodemailer": "^7.0.11",
+    "reflect-metadata": "^0.2.2",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.19.27",
+    "@types/nodemailer": "^7.0.4",
+    "prisma": "^6.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}
